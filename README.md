@@ -11,3 +11,18 @@ Java 개발자 과정 프론트앤드 리포지토리
 1일차 학습내용
 <!-- [멀티미디어](https://raw.githubusercontent.com/dlrgus2928/basic-html-2023/main/image/day01_1.png) -->
 <img src="https://raw.githubusercontent.com/dlrgus2928/basic-html-2023/main/image/day01_1.png" width="300">
+
+## 2일차
+- HTML 5 학습
+    - HTML 5 입력태그
+    - CSS 3 기본
+    - CSS 3 고급
+
+## 3일차
+-HTML 5 학습
+    - CSS 3 고급
+    - HTML 레이아웃
+    - 반응형 웹
+
+3일차 레이아웃
+<img src="https://raw.githubusercontent.com/dlrgus2928/basic-html-2023/main/image/grid_layout.png" width="300">
