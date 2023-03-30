@@ -1,0 +1,334 @@
+@charset "UTF-8";
+/* 구글폰트로 웹사이트 글자체 변경*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+
+/* 모든 페이지에 적용 */
+* {
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif ; 
+}
+
+html{
+    scroll-padding-top: calc(4.5rem - 1px);
+}
+
+body {
+    letter-spacing: 0.063em;
+}
+
+a {
+    color: #64a19d;
+}
+
+/* 가로줄 hr 설정 */
+hr {
+    margin: 1rem 0;
+    color: inherit;
+    border: 0;
+    border-top: 1px solid;
+    opacity: 0.25;
+}
+
+/* 글자 수정 */
+h1, h2, h3, h4, h5, h6{
+    margin-top:0;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* h1에 대한 글자 크기 적용*/
+h1 {
+    font-size: calc(1.5rem + 1.5vw); /* 계산으로 넓이를 변경*/
+}
+@media screen and (min-width:1200px){
+    h1{
+        font-size:2.5rem;
+    }
+}
+
+/* h2에 대한 글자 크기 적용*/
+h2 {
+    font-size: calc(1.3rem + 0.9vw); /* 계산으로 넓이를 변경*/
+}
+@media screen and (min-width:1200px){
+    h2{
+        font-size:2.0rem;
+    }
+}
+
+/* p 태그에 대한 수정*/
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* 목록 설정*/
+ol, ul{
+    padding-left: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* 이미지 설정 */
+img{
+    vertical-align: middle;
+}
+
+/* 웹페이지 하단영역 */
+.footer{
+    padding: 5rem 0;
+}
+
+/* 하단부 띄우기*/
+.contact-section{
+    padding-top: 5rem;
+}
+
+/* card 밑에 생상넣기 */
+.contact-section .card{
+    border: 0;
+    border-bottom: 0.25rem solid #64a19d;
+}
+
+/* card의 글자 설정 변경하기 (address, email, phone)*/
+.contact-section .card h4{
+    font-size: 0.8rem;
+    letter-spacing: 0.15rem;
+}
+
+/* card의 가로줄 설정 변경하기 */
+.contact-section .card hr{
+    opacity: 1;
+    border-color: #64a19d;
+    border-width: 0.25rem;
+    width: 3rem;
+}
+/* 트위터 페북 깃헙을 card로 부터 떨어트리기*/
+.contact-section .social {
+    margin-top: 5rem;
+}
+
+/* 트위처 페북 깃헙 로고 설정 변경*/
+.contact-section .social a {
+    text-align: center;
+    width: 3rem; height: 3rem;
+    background-color: rgba(255, 255, 255, 00.15rem);
+    border-radius: 100%;
+    line-height: 3rem; /* 16px x 3 */
+    color: rgba(255, 255, 255, 0.5);
+}
+
+/* 로고 마우스 올렸을시 색상 변경*/
+.contact-section .social a:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* 로고 클릭시 색상변경*/
+.contact-section .social a:active {
+    color: white;
+}
+
+/* 사진과 Subscribe!! 사이 여백 및 설정*/
+.signup-section {
+    padding: 10rem 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1) 0%, rgba(0,0,0,0.5)75%, #000 100%),
+                url('../images/bg-signup.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* 이메일 입력창 설정*/
+.signup-section .form-signup input {
+    box-shadow: 0 0.19rem 0.19rem 0 rgba(0,0,0,0.1) !important; /* !important = 무조건 적용되어야 하는 스타일 */
+    padding: 1.25rem 2rem;
+    height: auto;
+    font-size: 80%;
+    letter-spacing: 0.1rem;
+    border: 0;
+}
+
+/* send email button 설정*/
+.btn {
+    --bs-btn-bg:#64a19d;
+    background-color: #64a19d;
+    box-shadow: 0 0.19rem 0.19rem 0 rgba(0,0,0,0.1) !important; /* !important = 무조건 적용되어야 하는 스타일 */
+    padding: 1.25rem 2rem;
+    font-size: 80%;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    border: 0;    
+}
+
+/* send email 버튼에 마우스 올렸을때 반응*/
+.btn:hover {
+    background-color: #558985;
+}
+
+/* address, email, phone 색상 변경 */
+.custom-color{
+    color: #64a19d;
+}
+
+/* 여백주기*/
+.portfolios-section{
+    padding:10rem 0;
+}
+
+.portfolios-section .featured-text{
+    padding: 2rem;
+}
+
+.portfolios-section .portfolios-text{
+    padding: 3rem;
+    font-size: 90%;
+}
+
+/* 크기에 따른 화면 설정*/
+@media screen and (min-width : 992px) {
+    .portfolios-section .featured-text{
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #64a19d;
+    }
+
+    .portfolios-section .portfolios-text{
+        padding: 5rem;        
+    }
+}
+
+/* ipad 화면 설정*/
+.about-section {
+    padding-top: 10px;
+    background: linear-gradient(to bottom, #000 0%, rgba(0,0,0, 0.9) 75%, rgba(0,0,0,0.8) 100%);
+}
+
+.about-section p{
+    margin-bottom: 5rem;
+}
+
+/* 제일 윗부분 여백*/
+.masterHead{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    min-height: 35rem;
+    padding: 15rem 0;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.3)0%, rgba(0,0,0,0.7)75%, #000 100%),
+                url('../images/bg-masthead.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+
+/* GrayScale 글자 관련*/
+.masterHead h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    letter-spacing: 0.8rem;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.4);
+}
+
+.masterHead h2{
+    max-width: 20rem;
+    font-size: 1rem;
+}
+
+#mainNav {
+    min-height: 3.5rem;
+    background-color: #fff;
+}
+
+#mainNav .navbar-toggler{
+    font-size: 80%;
+    padding: 0.75rem;
+    color : #64a19d;
+    border:1px solid #64a19d;
+}
+
+#mainNav .navbar-toggler:focus{
+    outline:none;
+}
+
+#mainNav .navbar-brand {
+    color: #000;
+    font-weight: 900;
+    padding: 0.9rem 0;
+}
+
+#mainNav .navbar-nav .nav-item:hover {
+    color: fade(#fff, 80%);
+    outline: none;
+    background-color: transparent;    
+}
+
+#mainNav .navbar-nav .nav-item:active,
+#mainNav .navbar-nav .nav-item:focus {
+    outline: none;
+    background-color: transparent;
+}
+
+@media screen and (min-width : 992px) {
+    #mainNav{
+        padding-top: 0;
+        padding-bottom : 0;
+        border-bottom: none;
+        background-color: transparent;
+        transition: background-color 0.3s ease-in-out;
+    }
+
+    #mainNav .navbar-brand{
+        color: rgba(255, 255, 255, 0.5);
+        padding: 0.5rem 0;        
+    }
+
+    #mainNav .nav-link{
+        transition: none;
+        padding: 2rem 1.5rem;
+        color:rgba(255, 255, 255, 0.5);
+    }
+
+    #mainNav .nav-link:hover{
+        color: rgba(255,255,255,0.8);
+    }
+    #mainNav .nav-link:active{
+        color: white;
+    }
+
+    /* js에서 처리하는 메뉴부분 시작 */
+    /* 상단바 이동시 표현 */
+    /* 없는 클래스를 만드는 것이기 떄문에 #mainNav .navbar-shrink 사이에 공백이 있으면 절대 안됨*/
+    #mainNav.navbar-shrink {
+        background-color: white;
+    }
+
+    #mainNav.navbar-shrink .navbar-brand{
+        color: #000;
+    }
+
+    #mainNav.navbar-shrink .navbar-link{
+        color: #000;
+        padding: 1.5rem 1.5rem 1.25rem;
+        border-bottom: 0.25rem solid transparent;
+    }
+
+    #mainNav.navbar-shrink .nav-link:hover{
+        color: #64a19d;
+    }
+    #mainNav.navbaer-shrink .nav-link:active{
+        color: #467370
+    }
+    #mainNav.navbaer-shrink .nav-link:active{
+        color: #64a19d;
+        outline: none;
+        border-bottom: 0.25rem solid #64a19d;
+    }
+    /* js에서 처리하는 메뉴부분 끝 */
+}
+
