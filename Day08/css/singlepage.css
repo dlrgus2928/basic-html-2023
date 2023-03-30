@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* 구글폰트로 웹사이트 글자체 변경*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@200;300;400;500;600;700;900&display=swap');
 
 /* 모든 페이지에 적용 */
 * {
@@ -312,7 +312,7 @@ img{
         color: #000;
     }
 
-    #mainNav.navbar-shrink .navbar-link{
+    #mainNav.navbar-shrink .nav-link{
         color: #000;
         padding: 1.5rem 1.5rem 1.25rem;
         border-bottom: 0.25rem solid transparent;
@@ -321,10 +321,10 @@ img{
     #mainNav.navbar-shrink .nav-link:hover{
         color: #64a19d;
     }
-    #mainNav.navbaer-shrink .nav-link:active{
+    #mainNav.navbar-shrink .nav-link:active{
         color: #467370
     }
-    #mainNav.navbaer-shrink .nav-link:active{
+    #mainNav.navbar-shrink .nav-link.active{
         color: #64a19d;
         outline: none;
         border-bottom: 0.25rem solid #64a19d;
