@@ -108,6 +108,6 @@ SB Admin Page 마무리
 
 Dream Jeju Web
 
-<img src="https://raw.githubusercontent.com/dlrgus2928/basic-html-2023/main/image/portfolio5" width="700">
+<img src="https://raw.githubusercontent.com/dlrgus2928/basic-html-2023/main/image/portfolio5.png" width="700">
 
 ## 12일차
